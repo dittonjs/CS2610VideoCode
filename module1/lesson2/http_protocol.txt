@@ -1,0 +1,40 @@
+CLIENT
+Sends an UTF-8 encoded string
+
+Shape of the string:
+
+<verb> <uri> <version>
+Header-1: my value
+Header-2: header-2's value
+Header-3: 1,2,3
+Content-Type: text/html
+
+<h1>Hello, world</h1>
+
+
+SERVER
+
+<version> <status> <reason>
+Header-1: my value
+Header-2: header-2's value
+Header-3: 1,2,3
+Content-Type: text/html
+
+<h1>Hello, world</h1>
+
+EXAMPLE REQUEST
+
+GET /index.html HTTP/1.1
+Accept: text/html
+Cookie: sessionId=1234oinsd908fj
+
+admin=true&includeuser=true
+
+
+EXAMPLE RESPONSE
+
+HTTP/1.1 200 Ok
+Content-Type: text/html
+Content-Length: 21
+
+<h1>Hello, world</h1>
