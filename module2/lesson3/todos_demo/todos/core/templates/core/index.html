@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos</title>
+  <script src="{% static 'core/index.js' %}" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Todos</h1>
+  </header>
+  <main>
+    <form action="/todos/" method="post">
+      <label>
+        Task
+        <input type="text" name="content" id="content">
+      </label>
+      <button>Save</button>
+    </form>
+    <div>
+      {% if todos %}
+        {% for todo in todos %}
+          <div>
+            <input
+              type="checkbox"
+              data-todo-id="{{todo.id}}"
+              {% if todo.is_completed %}
+                checked
+              {% endif %}
+            > {{todo.content}}
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>You don't have any todos!</p>
+      {% endif %}
+    </div>
+  </main>
+</body>
+</html>

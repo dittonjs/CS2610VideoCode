@@ -1,7 +1,7 @@
 import socket
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect(("127.0.0.1", 5000))
+    s.connect(("192.168.1.28", 8081))
     while True:
         text = input("Type something: ")
         if text == "exit":

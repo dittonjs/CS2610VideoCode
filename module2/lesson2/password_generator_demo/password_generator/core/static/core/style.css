@@ -1,0 +1,37 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 0px 16px;
+}
+
+main {
+  padding: 0px 16px;
+}
+
+
+.main-form {
+  padding: 16px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+}
+
+.main-form input {
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+.main-form button {
+  padding: 8px;
+}

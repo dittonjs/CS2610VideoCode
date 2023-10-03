@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "custom-variables"
+version = "0.1.0"
+description = ""
+authors = ["Joseph Ditton <jditton.atomic@gmail.com>"]
+readme = "README.md"
+packages = [{include = "custom_variables"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

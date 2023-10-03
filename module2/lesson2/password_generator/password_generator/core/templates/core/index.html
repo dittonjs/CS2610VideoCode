@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Password Generator</h1>
+  </header>
+  <main>
+    <form action="/passwords/">
+      <label>
+        Length
+        <input type="number" name="length" id="length" value="12">
+      </label>
+      <label>
+        Number of Passwords
+        <input type="number" name="count" id="count" value="1">
+      </label>
+      <button>Generate</button>
+    </form>
+  </main>
+</body>
+</html>

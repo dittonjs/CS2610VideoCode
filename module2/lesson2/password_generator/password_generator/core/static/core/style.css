@@ -1,0 +1,16 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  border: 1px solid gray;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form input {
+  display: block;
+}
